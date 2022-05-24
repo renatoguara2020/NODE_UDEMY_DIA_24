@@ -1,12 +1,17 @@
-var http = require('http');
+const express = require('express')
+const app = express()
+const port = 3000
 
+app.get('/', (req, res) => {
+  res.send(`<h1>Hello World na porta: ${port} com Express!!!!`)
+})
 
-const port = 8080;
+app.listen(port, (err) => {
 
-http.createServer((req, res) => {
+    if(!err){
+  console.log(`Example App listening on port ${port}`)
+    }else{
 
-res.end(`<h1>Bem vindo ao meu site com Node na porta: ${port}</h1>`)
-}).listen(port);
-
-console.log(`Meu Servidor esta Rodando na porta ${port}`)
-
+        console.err(err)
+    }
+})
