@@ -53,6 +53,11 @@ input:invalid{
 
 }
 
+input:valid{
+
+    border: 3px solid  greenyellow;
+}
+
 #form-user button{
 
     font-size:20px;
@@ -70,4 +75,12 @@ input:invalid{
 #form-user button:hover{
 
     background-color: #0099bc;
+}
+
+@media (max-width: 700px){
+    .structure{
+        grid-template-columns: auto;
+    }
+
+
 }
