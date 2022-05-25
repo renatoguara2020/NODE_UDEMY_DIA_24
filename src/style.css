@@ -8,7 +8,7 @@ body{
 
     margin-top: 10px;
 }
-input {
+input, button {
 
     outline: none;
 
@@ -83,4 +83,9 @@ input:valid{
     }
 
 
+}
+
+.error {
+
+    
 }
